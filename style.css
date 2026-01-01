@@ -8,7 +8,7 @@ html {
     min-height: 100%;
 }
 
-body, #i8j1hi, #izr5td, #ia861u, #i3r2qj, #ikyqdi {
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(#fff 1%, #fff 100%);
@@ -22,6 +22,54 @@ body, #i8j1hi, #izr5td, #ia861u, #i3r2qj, #ikyqdi {
     min-height: 100vh;
 }
 
+#home-hero {
+    height: 100vh;
+    background-image: url('images/hero-background.png');
+    background-size: contain;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+/*
+#hero-heading {
+    border-bottom: 5px solid #000;
+    overflow:auto;
+}
+*/
+/* Responsive background for small screens */
+@media (max-width: 768px) {
+  #home-hero {
+    background-size: 110vw auto;
+    background-position: center top;
+    background-position-y: 0;
+  }
+  #spacer-column {
+    height: 100vh;
+    min-height: 150px; /* fallback for very small screens */
+    width: 0;
+    padding: 0;
+    margin: 0;
+  }
+  #iycz3 {
+    max-width: 90vw;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 40vh;
+    left: 0;
+    right: 0;
+    position: relative;
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#hero-heading {
+    background-color: rgb(0, 0, 0 , 0);
+    
+}
+
 /* Override any potential white backgrounds */
 html, body, main {
     background-color: #fff !important;
@@ -30,7 +78,6 @@ html, body, main {
 /* Common Components */
 .heading {
     margin: 0;
-    color: rgba(29, 40, 55, 1);
 }
 
 .grid-column {
@@ -92,10 +139,6 @@ html, body, main {
     border-radius: 5px;
     font-size: 1.1rem;
     text-align: center;
-}
-
-.text-blue {
-    color: #D0343E;
 }
 
 .link:hover {
@@ -190,21 +233,43 @@ html, body, main {
 }
 
 /* Header/Hero Section IDs */
-#i8h6gn, #irjua, #i2z4yd, #iwrtww, #iw0e0p, #iewup7 {
-    font-size: 3rem;
+#irjua {
+    font-size: clamp(2.2rem, 7vw, 3.5rem);
     text-align: center;
-    color: #000000;
+    padding-top: 7.5vh;
+    padding-bottom: 10px;
+    color: #D0343E;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+body #i16n4i {
+    font-size: clamp(1.3rem, 5vw, 2.5rem);
+    color: #000;
+    text-align: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+/* Optional: further reduce font size on very small screens */
+@media (max-width: 480px) {
+  #irjua {
+    font-size: clamp(1.5rem, 10vw, 2.5rem);
+  }
+  body #i16n4i {
+    font-size: clamp(1.1rem, 7vw, 2rem);
+  }
 }
 
 /* Feature Section IDs */
-#i5bcda, #ia5d7b, #ix35a6, #iroa68, #i8jeuj, #ita48s, #i7owfh, 
+#i5bcda, #ia5d7b, #ix35a6, #iroa68, #i8jeuj, #i7owfh, 
 #ircysl, #i32om3, #iosbyf, #iqza0j, #ifme48 {
     color: #D0343E;
 }
 
 /* Content Section Containers */
-#iag9m4, #iycz3, #i58brp, #ioy6uk, #isi0tr, #ivxs8n {
-    max-width: 1200px;
+#iycz3 {
+    max-width: 50vw;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -215,26 +280,25 @@ html, body, main {
     background-repeat: repeat;
     background-attachment: scroll;
     background-origin: padding-box;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    margin-top: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 /* Main Section Wrappers */
-#im7xhi, #izmb4a, #i3d1yz, #img9sz, #iwb9sk, #igej5k, #iz29ek, 
-#feature-section, #irz7b, #ivh69t, #iiaf2e, #inzrq8, #itvpo1, 
-#ivub05, #id8xfs, #iywb2q, #iffyvh, #in1iuf {
+#irz7b, #feature-section, #imymf, #ib541, #iag2nk, #ik2rdi, #iz29ek, #ioyxg, #i8w4i, #ixzh1 {
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 20px;
     padding-right: 20px;
-    background-image: linear-gradient(#fff 1%, #fff 100%);
+
     background-position: 0px 0px;
     background-size: 100% 100%;
     background-repeat: repeat;
@@ -242,17 +306,21 @@ html, body, main {
     background-origin: padding-box;
 }
 
+
+#irz7b {
+    justify-content: right;
+    padding-right: 3vw;
+}
+
 /* Text Content IDs */
-#i6ca9f, #igqj95, #i6m2mf, #ivl6rh, #ifw58b, #ivez8j, #id1t3y, 
-#i6rp8q, #ihs4lb, #iu9a03, #ij43ag, #i1r15h {
+#id1t3y, #i6rp8q, #ihs4lb, #iunqj8, #iw4bzj, #i03vrs, #ijbrmr, #i8isa {
     font-size: 1.2rem;
     margin-bottom: 15px;
     color: #000000;
 }
 
 /* Section Headings */
-#il3p65, #ilzhuj, #ijlraj, #ixip2w, #ibhyqq, #i7510p, #ixr00j, 
-#ixs9p4, #iw8t5j, #iykhok, #i6dsxt {
+#ixr00j, #ixs9p4, #iiacm, #i83vu9, #i7owfh {
     font-size: 2.5rem;
     color: #000000;
 }
@@ -401,6 +469,7 @@ html, body, main {
     text-align: center;
 }
 
+
 #i88gpk, #itndw, #i70h9o, #ir4dvj {
     padding: 10px;
     max-width: 750px;
@@ -518,7 +587,7 @@ html, body, main {
 }
 
 /* Footer Section IDs */
-#ie7uxx, #iek0kb, #im7zqg, #itv0ho, #i46vmh, #i8qzpm {
+#i46vmh, #ipv8r8, #is45mp {
     padding: 10px;
     text-align: center;
     font-size: 0.8rem;
@@ -878,4 +947,19 @@ main a:not(footer a):not(.navbar-menu-link):not(.button):hover {
     padding: 20px;
     box-sizing: border-box;
   }
+}
+
+.breakable-dash {
+  white-space: normal;
+  /* Allow break after the em dash */
+}
+.breakable-dash::after {
+  content: "\200B"; /* zero-width space: allows break after the dash */
+}
+
+.breakable-to {
+  white-space: normal;
+}
+.breakable-to::after {
+  content: "\200B"; /* zero-width space: allows break after "to" */
 }
