@@ -724,7 +724,7 @@ body #i16n4i {
     text-align: center;
     font-size: 0.8rem;
     margin-top: 20px;
-    opacity: 75%;
+    opacity: 100%;
     color: #fff;
 }
 
@@ -837,12 +837,9 @@ body #i16n4i {
     background-origin: padding-box;
 }
 
-#ifln5d,
-#iuqzsf,
-#infq4i,
-#igh6n7,
+
 #ia6t6g {
-    display: block;
+    display: inline;
     align-self: center;
 }
 
