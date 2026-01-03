@@ -318,16 +318,8 @@ body #i16n4i {
 #i8w4i,
 #ixzh1 {
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
     padding-left: 20px;
     padding-right: 20px;
-
-    background-position: 0px 0px;
-    background-size: 100% 100%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-origin: padding-box;
 }
 
 
@@ -356,6 +348,7 @@ body #i16n4i {
 #iiacm,
 #i83vu9,
 #i7owfh {
+    justify-content: center;
     font-size: 2.5rem;
     color: #000000;
 }
