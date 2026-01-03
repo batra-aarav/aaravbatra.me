@@ -140,9 +140,6 @@ main {
     border-radius: 10px;
 }
 
-/* Navigation Bar Styles */
-/* (removed unused navbar styles) */
-
 /* Header/Hero Section IDs */
 #irjua {
     font-size: clamp(2.2rem, 7vw, 3.5rem);
@@ -162,7 +159,6 @@ body #i16n4i {
     padding-right: 3vw;
 }
 
-/* Optional: further reduce font size on very small screens */
 @media (max-width: 480px) {
     #irjua {
         font-size: clamp(1.5rem, 10vw, 2.5rem);
