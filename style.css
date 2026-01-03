@@ -448,19 +448,3 @@ footer .link {
 footer .link:hover {
     color: #D0343E;
 }
-
-main a:not(footer a):not(.navbar-menu-link):not(.button) {
-    color: #D0343E;
-    text-decoration: none;
-    transition: color 0.3s ease 0s;
-}
-
-main a:not(footer a):not(.navbar-menu-link):not(.button):hover {
-    color: #D0343E;
-    text-decoration: underline;
-}
-
-/* Landscape mode optimizations */
-@media screen and (orientation: landscape) {
-    /* ...existing code... */
-}
